@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: green;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="" style="color: cyan;">Jst Tan</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="donation.html">Donation</a>
+  <a href="newsletter.html">Newsletter</a>
+  <a href="story.html">Story</a>
+  <a href="video.html">Video</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding:16px">
+<h1>Donation</h1>
+<p>Jst Tan is a web developer, story writer and video editor. Jst Tan is the CEO and shareholder of One Future Unified Team too. Jst Tan develops all of One Future Unified Team websites, software and etc. Jst Tan also the writer of the Teenager Heroes book series. Jst Tan also a video editor too. </p>
+<p>If you like what Jst Tan do, feel free to help Jst Tan by sending a small donation. From $1 to $10, it matter a lot to us. You could choose to donate how much you want one-time or monthly per your finance situation and preference. </p>
+<p>Currently, you could donate to Jst Tan via <a href="https://ko-fi.com/jsttan">Ko-Fi</a> and <a href="https://www.buymeacoffee.com/jestonjst">Buy Me A Coffee</a> donation pages. Ko-Fi charges 0% while Buy Me A Coffee charges 5% for one-time donation while both charges 5% for membership and Stripe charges 2.9% plus 30 cents per transaction.</p>
+</div>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('jsttan', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#5cb85c',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="jestonjst" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting Jst Tan websites. If you love what we do, please drop a donation to us. " data-color="#26B0A1" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
